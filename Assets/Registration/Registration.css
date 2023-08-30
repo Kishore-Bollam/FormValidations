@@ -1,0 +1,23 @@
+h1{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.b-danger{
+    border: 2px solid red;
+}
+.text-red{
+    color: red;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.mandatory-field{
+    color: red;
+}

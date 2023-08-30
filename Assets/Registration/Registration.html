@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From Validation</title>
+     <!-- external files -->
+     <link rel="stylesheet" href="../css/Bootsrap/Bootsrap.css">
+     <script type="text/javascript" src="../css/Bootsrap/Bootstrap.js"></script>
+    <!-- user created files -->
+    <link rel="stylesheet" href="../Registration/Registration.css">
+    <script type="text/javascript" src="../Registration/Registration.js"></script>
+   
+</head>
+<body>
+    <div >
+        <h1>REGISTARION FORM VALIDATIONS</h1>
+        <form action="" class="m-5 " autocomplete="off">
+            <!-- first name -->
+      <div class="form-group p-2">
+        <label for="">FirstName <label for="" class="mandatory-field">*</label></label>
+        <input type="text" class="form-control" id="FirstName" onchange="validateFirstName()">
+      </div>
+      <div class="text-red d-none" id="FirstNameErr">
+        <label for="" >FirstName Field is Required!</label>
+      </div>
+      <!-- last name -->
+      <div class="form-group p-2">
+        <label for="">LastName  <label for="" class="mandatory-field">*</label></label>
+        <input type="text" class="form-control" id="LastName" onchange="validateLastName()">
+      </div>
+      <div class="text-red d-none" id="LastNameErr">
+        <label for="" >LastName Field is Required!</label>
+      </div>
+      <!-- email -->
+      <div class="form-group p-2">
+        <label for="" >Email  <label for="" class="mandatory-field">*</label></label>
+        <input type="email" class="form-control" id="Email" onchange="validateEmail()">
+      </div>
+      <div class="text-red d-none" id="EmailErr">
+        <label for="" >Email Field is Required!</label>
+      </div>
+      <!-- gender -->
+      <div class="form-group p-2">
+        <label for="">Gender<label for="" class="mandatory-field">*</label> :-</label>
+        <input type="radio" name="gender" value="male" id="Male" onchange="validateGender()"><label for="">Male</label>
+        <input type="radio" name="gender" value="female" id="Female" onchange="validateGender()"> <label for="">Female</label>
+      </div>
+      <div class="text-red d-none" id="genderErr">
+        <label for="" >Gender Field is Required!</label>
+      </div>
+      <!-- DOB -->
+      <div class="form-group p-2">
+        <label for="" >DOB<label for="" class="mandatory-field">*</label></label>
+        <input type="date" class="form-control" id="DOB"  onchange="validateDoB()">
+      </div>
+      <div class="text-red d-none" id="DOBErr">
+        <label for="" >DOB Field is Required!</label>
+      </div>
+      <!-- Phone number -->
+      <div class="form-group p-2">
+        <label for="" >Phone Number<label for="" class="mandatory-field">*</label></label>
+        <input type="text" class="form-control" id="phonenumber" onchange="validatePhoneNumber()">
+      </div>
+      <div class="text-red d-none" id="PhonenumberErr">
+        <label for="" >phonenumber Field is Required!</label>
+      </div>
+      <!-- upload image -->
+      <div class="form-group p-2">
+        <label for="" >Upload File<label for="" class="mandatory-field">*</label></label>
+        <input type="file" class="form-control" id="file" onchange="validateUploadFile()">
+      </div>
+      <div class="text-red d-none" id="FileuploadErr">
+        <label for="" >File Upload Field is Required!</label>
+      </div>
+      <!-- address -->
+      <div class="form-group p-2" onchange="validateAddress()">
+        <label for="" > Enter Address <label for="" class="mandatory-field">*</label></label>
+       <textarea name="" id="Address" class="form-control" itemid="" ></textarea>  
+        </div>
+        <div class="text-red d-none" id="AddressErr">
+            <label for="" >  Address Field is Required!</label>
+          </div>
+
+         <!-- buttons  -->
+      <div class="form-group p-2">
+        <input type="button"  value="Submit" class="btn btn-primary" id="Submit" onclick="validateRegistrationForm()">
+        <input type="reset"  value="Cancel" class="btn btn-danger" id="cancel">
+            <label for="" class="text-red d-none" id="OverAllMsgErr">  Please Fill All The Required Fields!!</label>
+      </div>
+        </form>
+    </div>
+    
+</body>
+</html>
